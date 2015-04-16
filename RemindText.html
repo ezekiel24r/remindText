@@ -1,0 +1,23 @@
+<head>
+  <title>RemindText</title>
+</head>
+
+<body>
+  <h1>Welcome to RemindText!</h1>
+
+	{{> Send}}
+
+</body>
+
+<template name="Send">
+	<h1>Send a text message anonymously!</h1>
+	<br>
+	<p>Obviously this is not even close to being finished</p>
+	<p>Destination Phone Number: </p><input id="add01" type="text"/>
+	<br>
+	<p>Message: </p>
+	<textarea id="msg01" type="text" class="MsgBox" rows=5 cols=30></textarea>
+	<br>
+	<input type="button" value="Send" />
+
+</template>
