@@ -22,6 +22,15 @@ if(Meteor.isClient) {
     };
 };
 
+if (Meteor.isServer) {
+  Meteor.startup(function () {
+    console.log("In isServer")
+      Meteor.methods({
+
+        sendOutMsg: function (number, textmsg){ 
+                console.log("sendOutMsg() called with number= " + number + ", message: " + textmsg);
+
+
         check(number, String);
         check(textmsg, String);
 
